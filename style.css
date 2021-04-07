@@ -19,20 +19,40 @@ color: white;}
 
 h1 {font-size: 36pt;  
   color: white; 
-  text-align: center; 
+  text-align: left; 
   font-family: 'Playball', cursive; 
-  margin-top: 5px; margin-bottom: 5px}
+  margin-left: 25px;
+  margin-top: 15px; margin-bottom: 0px}
+
+.gallery { position: relative;
+margin-top: 0px; }
+.gallery ul { width: 350px; 
+             list-style-type: none; }
+.gallery li { display: inline; 
+              float: left; 
+              padding: 10px; }
+.gallery img { border-style: none; 
+  opacity: 0.6;
+   width: 50px; 
+}
+.gallery img:hover {
+  opacity: 1;
+}
+
+/*.gallery:after {
+  content: "";
+  display: table;
+  clear: both;}*/
 
 
-
- /* The grid: equal columns that floats next to each other */
+ /* The grid: equal columns that floats next to each other 
 .column {
   float: left;
   width: 6.66%;
   padding: 5px;
 }
 
-/* Style the images inside the grid */
+
 .column img {
   opacity: 0.6;
   cursor: pointer;
@@ -40,23 +60,19 @@ h1 {font-size: 36pt;
   padding-right:5px;
 }
 
-.column img:hover {
-  opacity: 1;
-}
 
-/* Clear floats after the columns */
+/* Clear floats after the columns 
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
   position: relative;
   display: none;
-   margin-left: auto;
-  margin-right: auto;
+
 }
 
 .container img {
@@ -68,21 +84,20 @@ h1 {font-size: 36pt;
 /* Expanding image text */
 #imgtext {
   position: absolute;
-  top: 10px;
-  left: 50px;
-  color: white;
-  font-family: 'Playball', cursive; 
-  font-size: 22px;
-  padding-right: auto;
-  padding-left: auto;
-}
-
-/* Closable button inside the image 
-.closebtn {
-  position: absolute;
-  top: 10px;
+  top: 50px;
   right: 15px;
   color: white;
-  font-size: 35px;
+  text-align: right;
+  font-family: 'Playball', cursive; 
+  font-size: 22px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  color: white;
+  font-size: 40px;
   cursor: pointer;
-} */
+} 
