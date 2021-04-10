@@ -19,14 +19,14 @@ color: white;}
 
 h1 {font-size: 36pt;  
   color: white; 
-  text-align: left; 
+  text-align: center; 
   font-family: 'Playball', cursive; 
   margin-left: 25px;
   margin-top: 15px; margin-bottom: 0px}
 
-.gallery { position: relative;
-margin-top: 0px; }
-.gallery ul { width: 350px; 
+
+.gallery { }
+.gallery ul { width: 30%; 
              list-style-type: none; }
 .gallery li { display: inline; 
               float: left; 
@@ -39,65 +39,26 @@ margin-top: 0px; }
   opacity: 1;
 }
 
-/*.gallery:after {
-  content: "";
-  display: table;
-  clear: both;}*/
 
 
- /* The grid: equal columns that floats next to each other 
-.column {
-  float: left;
-  width: 6.66%;
-  padding: 5px;
-}
-
-
-.column img {
-  opacity: 0.6;
-  cursor: pointer;
-  width: 80%;
-  padding-right:5px;
-}
-
-
-/* Clear floats after the columns 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
-
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
-  position: relative;
-  display: none;
+.frame  {
+  margin-top: 5px;
 
 }
 
-.container img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.frame img {
+ margin-left: 30px;
+  border-style: solid;
+  border-color: white;
+  box-sizing: 1px;
 }
 
 /* Expanding image text */
 #imgtext {
-  position: absolute;
-  top: 50px;
-  right: 15px;
+   text-align: center;
+  background: grey;
   color: white;
-  text-align: right;
   font-family: 'Playball', cursive; 
-  font-size: 22px;
+  font-size: 20px;
 }
 
-/* Closable button inside the image */
-.closebtn {
-  position: absolute;
-  top: 0px;
-  right: 15px;
-  color: white;
-  font-size: 40px;
-  cursor: pointer;
-} 
