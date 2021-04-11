@@ -26,7 +26,7 @@ h1 {font-size: 36pt;
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 650px) {
   .gallery {
     display: none;
   }
@@ -57,7 +57,7 @@ h1 {font-size: 36pt;
 }
 /*only dispays this div below 768px wide - phone screen */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 650px) {
 
 .phoneGallery{
   display: none;
