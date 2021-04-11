@@ -25,6 +25,44 @@ h1 {font-size: 36pt;
   margin-top: 15px; margin-bottom: 0px}
 
 
+
+@media only screen and (max-width: 768px) {
+  .gallery {
+    display: none;
+  }
+  .frame {
+    display: none;
+  }
+  #imgtext{
+    display: none;
+  }
+.phoneGallery img {
+    display: block;
+  
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+.phoneGallery {
+  padding-top: 5px;
+  text-align: center;
+  background: grey;
+  color: white;
+  font-family: 'Playball', cursive; 
+  font-size: 20px;
+}
+
+}
+/*only dispays this div below 768px wide - phone screen */
+
+@media only screen and (min-width: 768px) {
+
+.phoneGallery{
+  display: none;
+}
+
 .gallery { }
 .gallery ul { width: 30%; 
              list-style-type: none; }
@@ -60,5 +98,6 @@ h1 {font-size: 36pt;
   color: white;
   font-family: 'Playball', cursive; 
   font-size: 20px;
+}
 }
 
