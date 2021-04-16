@@ -7,12 +7,36 @@
 <link href="style.css" rel="stylesheet">
 <script src="main.js"></script>
 </head>
+
 <body>
-<header><h1>Lucy Gray Gallery</h1>
- <p id="imgtext">Lucy_01</p>
+
+<header>
+
+  <!-- landscape view only -->
+   <div class="row">
+    <div class="column left"></div>
+    <div class="column middle"><h1>Lucy Gray Video Gallery</h1></div>
+    <div class="column right">
+      <nav>
+      <a href="lucysWorld.html">Click to view <i>Lucy's World</i> Videos</a>
+      </nav>
+    </div>
+  </div>
+
+<!-- phone portrait view only -->
+    <div class="phoneRow">
+      <h1>Lucy Gray Video Gallery</h1>
+      <nav>
+        <a href="lucysWorld.html">Click to view <i>Lucy's World</i> Videos</a>
+      </nav>
+    </div>
+
 </header>
 
-  <!-- The grid: four columns -->
+ <p id="imgtext">Lucy_01</p>
+
+
+ <!-- The grid: four columns -->
 <div class="gallery">
  
    <ul> 
@@ -83,7 +107,7 @@
       <img src="images/bts/bts_07thumb.jpg" name="images/bts/bts_07.jpg" alt="bts_07" onclick="myFunction(this);">
     </li>
   </ul>
-  <ul><li>Contact: martinpaulgray@yahoo.co.uk</li></ul>
+  <ul><li><p>Contact: martinpaulgray@yahoo.co.uk</p></li></ul>
 </div>
 
 <!-- Expanded image -->
@@ -99,8 +123,6 @@
   
       <img src="images/Lucy_01.jpg" alt="Lucy_01">
       Lucy_01<br>
-   
-    
       <img src="images/Lucy_14m.jpg" alt="Lucy_14m">
     Lucy_14m<br>
       <img src="images/Lucy_10.jpg" alt="Lucy_10">
@@ -144,7 +166,7 @@
       <img src="images/bts/bts_07.jpg" alt="bts_07">
     bts_07<br><br>
  
- Contact: martinpaulgray@yahoo.co.uk
+ <p> Contact: martinpaulgray@yahoo.co.uk</p>
 </div>
 
 

@@ -15,15 +15,97 @@
 }
 
 body {background-color: black;
-color: white;}
+color: white;
+float: top;}
 
-h1 {font-size: 36pt;  
-  color: white; 
+header {
+   margin-bottom: 20px;
+}
+
+nav {
+  text-align: right;
+  padding-right: 20px;
+}
+nav a {
+  color: white;
+  font-size: 12pt;
+  font-family: Georgia, Times, serif; 
+  letter-spacing: 0.3;
+  text-align: right;
+}
+nav a:link { color: #FFFFFF; }
+nav a:visited { color: #EAEAEA; }
+nav a:hover { color: #869DC7;
+}
+
+h1 {
+  font-size: 40pt;  
+  color: #869DC7; 
   text-align: center; 
   font-family: 'Playball', cursive; 
   margin-left: 25px;
-  margin-top: 15px; margin-bottom: 0px}
+  margin-top: 15px; margin-bottom: 0px
+}
 
+p {
+  color: #869DC7; 
+}
+
+iframe {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/*3 unequal columns*/
+.column {
+  float: left;
+  padding: 5px;
+}
+
+.left, .right {
+  width: 25%;
+  margin-top: 10px;
+}
+
+.middle {
+  width: 50%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+  #vidGallery {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #vidGallery div {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #vidGallery iframe {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  #vidGallery img {
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
 
 
 @media only screen and (max-width: 650px) {
@@ -36,68 +118,100 @@ h1 {font-size: 36pt;
   #imgtext{
     display: none;
   }
-.phoneGallery img {
+  .row{
+    display: none;
+  }
+
+  h1{
+    text-align: center;
+    margin-left: 0;
+  }
+  nav {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  }
+  .phoneGallery img {
     display: block;
-  
+    margin-bottom: 5px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
   }
 
-.phoneGallery {
-  padding-top: 5px;
-  text-align: center;
-  background: grey;
-  color: white;
-  font-family: 'Playball', cursive; 
-  font-size: 20px;
-}
+  .phoneGallery {
+    padding-top: 5px;
+    text-align: center;
+    background: #869DC7;
+    color: white;
+    font-family: 'Playball', cursive; 
+    font-size: 20px;
+  }
 
 }
-/*only dispays this div below 768px wide - phone screen */
+
 
 @media only screen and (min-width: 650px) {
 
-.phoneGallery{
-  display: none;
-}
+  .phoneGallery{ display: none;
+  }
+  .phoneRow {
+    display: none;
+  }
 
-.gallery { }
-.gallery ul { width: 30%; 
-             list-style-type: none; }
-.gallery li { display: inline; 
-              float: left; 
-              padding: 10px; }
-.gallery img { border-style: none; 
-  opacity: 0.6;
-   width: 50px; 
-}
-.gallery img:hover {
-  opacity: 1;
-}
+  .gallery { }
+  .gallery ul { width: 30%; 
+                list-style-type: none; }
+  .gallery li { display: inline; 
+                float: left; 
+                padding: 10px; }
+  .gallery img { 
+                border-style: solid;
+                border-color: #869DC7;
+                box-sizing: 1pt; 
+                opacity: 0.6;
+                width: 50px; 
+  }
+  .gallery img:hover {
+                opacity: 1;
+  }
 
+  .frame  {
+    margin-top: 5px;
+  }
 
+  .frame img {
+   margin-left: 30px;
+    border-style: solid;
+    border-color: #869DC7;
+    box-sizing: 1px;
+  }
 
-.frame  {
-  margin-top: 5px;
+  /* Expanding image text */
+  #imgtext {
+    padding: 5px;
+     text-align: center;
+    background: #869DC7;
+    color: white;
+    font-family: 'Playball', cursive; 
+    font-size: 20px;
+  }
 
-}
+ #vidGallery {
+  width: auto;
+  margin: auto;
+  align-items: center;
 
-.frame img {
- margin-left: 30px;
-  border-style: solid;
-  border-color: white;
-  box-sizing: 1px;
-}
+  }
 
-/* Expanding image text */
-#imgtext {
-   text-align: center;
-  background: grey;
-  color: white;
-  font-family: 'Playball', cursive; 
-  font-size: 20px;
-}
+  #vidGallery iframe {
+     display: inline;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
 }
 
