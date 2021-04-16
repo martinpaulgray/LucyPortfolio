@@ -101,6 +101,7 @@ iframe {
     margin-top: 20px;
   }
   #vidGallery img {
+    display: block;
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -199,14 +200,15 @@ iframe {
   }
 
  #vidGallery {
-  width: auto;
-  margin: auto;
+ display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
 
   }
 
   #vidGallery iframe {
-     display: inline;
+     display: flex;
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
