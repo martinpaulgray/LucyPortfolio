@@ -94,6 +94,8 @@ iframe {
   }
 
   #vidGallery iframe {
+    width: 420px;
+    height: 240px;
     display: block;
     margin-bottom: 5px;
     margin-left: auto;
@@ -148,6 +150,11 @@ iframe {
     color: white;
     font-family: 'Playball', cursive; 
     font-size: 20px;
+  }
+
+   #vidGallery iframe {
+    width: 350px;
+    height: 200px;
   }
 
 }
